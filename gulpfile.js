@@ -25,7 +25,7 @@ function css() {
 			],
 		}))
 		.pipe(clean({compatibility: 'ie11'}) )
-		.pipe(concat('common.css'))
+		.pipe(concat('main.css'))
 		.pipe(rename( function (path) {
 			path.basename += '-min';
 		}))

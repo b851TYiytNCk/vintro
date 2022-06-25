@@ -3,6 +3,14 @@
 /* Document
    ========================================================================== */
 
+html, body, div, h1, h2, h3, h4, p, input, button, label,
+li, ul, table, td, tr, th, td, textarea, form, header, a, select,
+footer, main, section, img, article, iframe, :before, :after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.

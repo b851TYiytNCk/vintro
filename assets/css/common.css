@@ -45,6 +45,8 @@
 .container {
 	max-width: 1226px;
 	width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .main_title {
@@ -54,4 +56,28 @@
 	line-height: 64px;
 	letter-spacing: 0.01em;
 	text-align: left;
+}
+
+.main-hdr {
+    margin-top: 60px;
+}
+
+.main-hdr .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    gap: 8px;
+}
+
+.burger-line {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
 }
