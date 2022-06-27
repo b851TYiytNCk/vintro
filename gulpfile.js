@@ -10,7 +10,8 @@ const pxToRem = require('gulp-px2rem-converter');
 function css() {
   return src(
   	['assets/css/normalize.css',
-  	 'assets/css/common.css'])
+  	 'assets/css/common.css',
+	 'assets/css/home.css'])
     // So use gulp-rename to change the extension
     .pipe(prefixer({
     	overrideBrowserslist: ['last 8 versions'],

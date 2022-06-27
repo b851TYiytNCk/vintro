@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/b851TYiytNCk/vintro/issues"
   },
-  "homepage": "https://github.com/b851TYiytNCk/vintro#readme"
+  "homepage": "https://github.com/b851TYiytNCk/vintro#readme",
+  "dependencies": {}
 }
