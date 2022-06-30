@@ -1,5 +1,5 @@
 <?php 
 	include('header.php');
-	include('templates/home.php');
+	include('templates/intro.php');
 	include('footer.php');
 ?>

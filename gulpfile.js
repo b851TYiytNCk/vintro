@@ -11,7 +11,7 @@ function css() {
   return src(
   	['assets/css/normalize.css',
   	 'assets/css/common.css',
-	 'assets/css/home.css'])
+	 'assets/css/intro.css'])
     // So use gulp-rename to change the extension
     .pipe(prefixer({
     	overrideBrowserslist: ['last 8 versions'],
@@ -25,8 +25,9 @@ function css() {
 				'Safari >= 6',
 			],
 		}))
+		.pipe(pxToRem())
 		.pipe(clean({compatibility: 'ie11'}) )
-		.pipe(concat('main.css'))
+		.pipe(concat('intro.css'))
 		.pipe(rename( function (path) {
 			path.basename += '-min';
 		}))
