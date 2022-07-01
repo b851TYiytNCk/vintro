@@ -6,7 +6,7 @@
         <title>Vintro</title>
         <meta name="description" content="Vintro is a multidisciplinary creative studio providing world-class digital services.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="manifest" href="site.webmanifest">
+        <!-- <link rel="manifest" href="site.webmanifest"> -->
 		<meta property="og:title" content="Vintro">
 		<meta property="og:site_name" content="Vintro Studio">
 		<meta property="og:url" content="vintro.dev">
@@ -21,7 +21,7 @@
         	if( $currentpage=="/" || $currentpage=="/index.php" 
         		|| $currentpage=="/index" || $currentpage=="" ):?>
 
-		<link rel="stylesheet" href="assets/css/min/intro-min.css">        
+		<link rel="stylesheet" href="assets/css/min/intro-min.css?ver=1.0.5">        
 
         <? endif;?>
 
