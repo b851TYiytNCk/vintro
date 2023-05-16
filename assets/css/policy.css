@@ -1,0 +1,208 @@
+.policy_content {
+    width: 50%;
+    margin-top: 70px;
+}
+
+.policy_content a {
+    text-decoration: underline;
+}
+
+.policy_title {
+    margin-bottom: 20px;
+}
+
+.policy-point {
+    margin-top: 60px;
+}
+
+#policy p, .types_item {
+    font-family: 'Cera Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+}
+
+.policy_subtitle {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.types_subtitle {
+    font-family: 'Сy Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.01em;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+.service_subtitle {
+    margin-top: 41px;
+}
+
+.types_list {
+    margin: 24px auto 40px;
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.policy-point:last-child {
+    margin-bottom: 64px;
+}
+
+@media only screen and (min-width: 1800px) {
+    .policy_content {
+        margin-top: 91px;
+    }
+
+    .policy_title {
+        margin-bottom: 26px;
+    }
+    
+    .policy-point {
+        margin-top: 78px;
+    }
+
+    #policy p, .types_item {
+        font-size: 20px;
+    }
+    
+    .policy_subtitle {
+        font-size: 39px;
+        margin-bottom: 26px;
+    }
+
+    .types_subtitle {
+        font-size: 32px;
+        margin-bottom: 26px;
+        margin-top: 53px;
+    }
+
+    .types_list {
+        margin: 32px auto 52px;
+        padding-left: 26px;
+    }
+
+    .policy-point:last-child {
+        margin-bottom: 83px;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .policy_content {
+        margin-top: 120px;
+    }
+
+    .policy_title {
+        font-size: 72px;
+        margin-bottom: 40px;
+    }
+
+    #policy p, .types_item {
+        font-size: 26px;
+    }
+
+    .policy-point {
+        margin-top: 90px;
+    }
+
+    .policy_subtitle {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+
+    .types_subtitle {
+        font-size: 40px;
+        margin-bottom: 40px;
+        margin-top: 60px;
+    }
+
+    .types_list {
+        margin: 40px auto 64px;
+    }
+    
+    .policy-point:last-child {
+        margin-bottom: 90px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .policy_content {
+        margin-top: 60px;
+    }
+    
+    .policy_title {
+        margin-bottom: 20px;
+    }
+    
+    .policy-point {
+        margin-top: 43px;
+    }
+    
+    #policy p, .types_item {
+        font-size: 13px;
+    }
+    
+    .policy_subtitle {
+        font-size: 24px;
+        margin-bottom: 14px;
+    }
+    
+    .types_subtitle {
+        font-size: 20px;
+        margin-bottom: 14px;
+        margin-top: 29px;
+    }
+    
+    .types_list {
+        margin: 18px auto 28px;
+        padding-left: 14px;
+    }
+    
+    .policy-point:last-child {
+        margin-bottom: 45px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .policy_content {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    
+    :root {
+        --cont-max-width: 325px;
+    }
+
+    .policy_title {
+        font-size: 28px;
+        line-height: 100%;
+        margin-bottom: 25px;
+    }
+
+    #policy p, .types_item {
+        font-size: 15px;
+    }
+
+    .policy_subtitle {
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+
+    .types_title {
+        margin-bottom: 0;
+    }
+
+    .types_subtitle {
+        margin: 35px 0 15px;
+    }
+    
+}
