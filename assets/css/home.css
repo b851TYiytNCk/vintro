@@ -170,7 +170,7 @@ img.intro__top-right-arrow-start {
     position: absolute;
     width: 520px;
     right: calc( ((100vw - var(--cont-max-width)) / 2) + 270px);
-    top: 300px;
+    top: 100px;
 }
 
 .intro__parallax img {
@@ -677,7 +677,7 @@ img.intro__top-right-arrow-start {
     .cube-wrap {
         width: 676px;
         right: calc( ((100vw - var(--cont-max-width)) / 2) + 310px);
-        top: 350px;
+        top: 120px;
     }
 
     /** Services **/
@@ -763,7 +763,7 @@ img.intro__top-right-arrow-start {
 
     .cube-wrap {
         right: calc( ((100vw - var(--cont-max-width)) / 2) + 350px);
-        top: 400px;
+        top: 140px;
     }
 }
 
@@ -805,8 +805,7 @@ img.intro__top-right-arrow-start {
     }
 
     .cube-wrap {
-        right: calc(((100vw - var(--cont-max-width))/ 2) + 300px);
-        top: 500px;
+        top: 190px;
         width: 830px;
     }
 
@@ -997,7 +996,7 @@ img.intro__top-right-arrow-start {
     .cube-wrap {
         width: 364px;
         right: calc(((100vw - var(--cont-max-width)) / 2) + 250px);
-        top: 220px;
+        top: 70px;
     }
     
     #areas {
@@ -1072,7 +1071,8 @@ img.intro__top-right-arrow-start {
     }
 
     .cube-wrap {
-        right: calc(((100vw - var(--cont-max-width)) / 2) + 120px);
+        right: calc(((100vw - var(--cont-max-width))/ 2) + 80px);
+        width: 340px;
     }
 
     .video_container {

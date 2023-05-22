@@ -27,7 +27,7 @@
 .first_top_cube img {
     width: 160px;
     position: relative;
-    top: -75px;
+    top: -75px!important;
     right: -70px;
     left: unset !important;
 }
@@ -288,7 +288,7 @@
 
     .first_top_cube img {
         width: 208px;
-        top: -110px;
+        top: -110px!important;
         right: -50px;
     }
 
@@ -553,7 +553,7 @@
 
     .first_top_cube img {
         width: 140px;
-        top: -75px;
+        top: -75px!important;
         right: -50px;
     }
 
@@ -709,7 +709,7 @@
         max-width: 333px;
     }
 
-    .scroll-content, .cookie_container {
+    #content, .cookie_container {
         display: none!important;
     }
 
@@ -777,6 +777,10 @@
         height: 464px;
         justify-content: space-between;
         z-index: 0;
+    }
+
+    .first_top_cube img {
+        top: 0!important;
     }
 
     #ind_exp {

@@ -21,30 +21,31 @@
         </div>
    
         <div id="content">
+            <header class="main-hdr" id="main-header">
+                <div class="container">
+                    <div class="main-hdr-logo-wrap">
+                        <a href="/">
+                            <img src="assets/img/logo.svg" alt="" class="logo-header">
+                        </a>
+                    </div>
+                    <div class="burger-lines-wrap">
+                        <div class="burger-lines">
+                            <div class="burger-line"></div>
+                            <div class="burger-line"></div>
+                        </div>
+                        <div class="closemenu">
+                            <div class="burger-line"></div>
+                            <div class="burger-line"></div>
+                        </div>
+                        <!-- <svg class="closemenu" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.9712 1.30658L18.6935 0.028717L9.99991 8.7223L1.30588 0.028717L0.0283203 1.30658L8.72234 10.0002L0.0283203 18.6938L1.30588 19.9716L9.99991 11.278L18.6935 19.9716L19.9712 18.6938L11.2776 10.0002L19.9712 1.30658Z" fill="#040505"/>
+                        </svg> -->
+                    </div>
+                </div>
+            </header>
             <section id="first">
                 <?php include('menu_open.php'); ?>
-                <header class="main-hdr" id="main-header">
-                    <div class="container">
-                        <div class="main-hdr-logo-wrap">
-                            <a href="/">
-                                <img src="assets/img/logo.svg" alt="" class="logo-header">
-                            </a>
-                        </div>
-                        <div class="burger-lines-wrap">
-                            <div class="burger-lines">
-                                <div class="burger-line"></div>
-                                <div class="burger-line"></div>
-                            </div>
-                            <div class="closemenu">
-                                <div class="burger-line"></div>
-                                <div class="burger-line"></div>
-                            </div>
-                            <!-- <svg class="closemenu" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M19.9712 1.30658L18.6935 0.028717L9.99991 8.7223L1.30588 0.028717L0.0283203 1.30658L8.72234 10.0002L0.0283203 18.6938L1.30588 19.9716L9.99991 11.278L18.6935 19.9716L19.9712 18.6938L11.2776 10.0002L19.9712 1.30658Z" fill="#040505"/>
-                            </svg> -->
-                        </div>
-                    </div>
-                </header>
+                
 
                 <div class="bg-fixed-first"></div>
                 <div class="container cube-wrap">

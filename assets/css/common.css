@@ -111,7 +111,7 @@ a {
     position: absolute;
     right: 0; /* if from body - calc((100vw - 1224px) / 2); */
     top: calc(50% - 6px); /* if from body - 60px / 2); */
-    z-index: 249;
+    z-index: 999;
 }
 
 .burger-lines,
@@ -586,6 +586,10 @@ body .mf-cursor.medium:before {
     /* CSS specific to iOS devices */
     #feedback {
         min-height: -webkit-fill-available;
+    }
+
+    .menu_open {
+        height: 100%;
     }
 }
 
@@ -1383,6 +1387,15 @@ body .mf-cursor.medium:before {
 
     .menu_open {
         padding: 42px calc( (100vw - 290px) / 2);
+    }
+
+}
+
+@media only screen and (max-width: 390px) {
+
+    .menu_open {
+        overflow: hidden;
+        max-width: 100%;
     }
 
 }

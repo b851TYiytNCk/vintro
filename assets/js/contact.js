@@ -1,43 +1,51 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-    const cursor = new MouseFollower({
-        container: 'body',
-        speed: 0.55
-    });
-
-    function attachCursorStyle(els, className) {
-        els.forEach( function(el){
-        
-            el.addEventListener('mouseenter', () => {
-                cursor.addState(className); // you can pass multiple states separated by whitespace
-            });
-            
-            el.addEventListener('mouseleave', () => {
-                cursor.removeState(className);
-            });
-        });
-    }
-
-    const cursorInverseElements = document.querySelectorAll('.footer-links li, .burger-lines-wrap, .menu_open-social');
-    
-    attachCursorStyle(cursorInverseElements, '-inverse-scaled');
-
-
-    function addHideCursor(el) {
-        el.addEventListener('mouseenter', () => {
-            cursor.hide(); // you can pass multiple states separated by whitespace
-        });
-        
-        el.addEventListener('mouseleave', () => {
-            cursor.show();
-        });
-    }
+    const winWidth = window.innerWidth;
 
     const btnSubmit = document.querySelector('.btn-submit');
     const tgLink = document.querySelector('.tg_link');
 
-    addHideCursor(btnSubmit);
-    addHideCursor(tgLink);
+    const notMobile = winWidth > 768;
+
+    if ( notMobile ) {
+
+        const cursor = new MouseFollower({
+            container: 'body',
+            speed: 0.55
+        });
+    
+        function attachCursorStyle(els, className) {
+            els.forEach( function(el){
+            
+                el.addEventListener('mouseenter', () => {
+                    cursor.addState(className); // you can pass multiple states separated by whitespace
+                });
+                
+                el.addEventListener('mouseleave', () => {
+                    cursor.removeState(className);
+                });
+            });
+        }
+    
+        const cursorInverseElements = document.querySelectorAll('.footer-links li, .burger-lines-wrap, .menu_open-social');
+        
+        attachCursorStyle(cursorInverseElements, '-inverse-scaled');
+    
+    
+        function addHideCursor(el) {
+            el.addEventListener('mouseenter', () => {
+                cursor.hide(); // you can pass multiple states separated by whitespace
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                cursor.show();
+            });
+        }
+    
+        addHideCursor(btnSubmit);
+        addHideCursor(tgLink);
+
+    }
 
     const nameInput = document.querySelector('.name_input');
     const emailInput = document.querySelector('.email_input');
@@ -118,15 +126,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const textBr = document.querySelector('.span-br');
 
-    // textInput.addEventListener('input', function(e) {
-    //     const tgt = e.target;
-    // });
-
     nameInput.addEventListener('input', function(e) {
-        
 
-        const winWidth = window.innerWidth;
         let nameNumb;
+
         if (winWidth > 1800) {
             nameNumb = 212;
         } else if (winWidth > 1366) {

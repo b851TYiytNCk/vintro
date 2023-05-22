@@ -39,78 +39,95 @@ document.addEventListener('DOMContentLoaded', function(){
 
     let winWidth = window.innerWidth;
 
+    const notMobile = winWidth > 768;
 
-    // gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+    const mainCube = document.querySelector('.cube-wrap');
+    const introSection = document.querySelector('#intro'); 
 
-    // let smoother = ScrollSmoother.create({
-    //   wrapper: "#content_wrapper",
-    //   content: "#content",
-    //   smooth: 1,               // how long (in seconds) it takes to "catch up" to the native scroll position
-    //   effects: true,           // looks for data-speed and data-lag attributes on elements
-    //   smoothTouch: 0.1,
-    // });
+    const aboutTopCube = document.querySelector('.first_top_cube');
+    const aboutBotCube = document.querySelector('.first_bot_cube');
 
-    // smooth scroll
-    const scrollbar = window.Scrollbar;
+    let multiplier,
+        closeTop;
 
-    const mainScrollBar = scrollbar.init(document.querySelector('#content'), {
-      syncCallbacks: true,
-    });
+    if (winWidth > 2559) {
+      closeTop = 95;
+    } else if (winWidth > 1366) {
+      closeTop = 71;
+    } else if ( notMobile ) {
+      closeTop = 70;
+    } // else {
+    //   closeTop = 72;
+    // }  
 
+    if ( notMobile ) {
 
-    const closeMenu = document.querySelectorAll('.closemenu');
-    const menuOpen = document.querySelector('.menu_open');
-    // console.log(mainScrollBar);
+      // smooth scrolling
+      const scrollbar = window.Scrollbar;
 
-    let closeTop;
+      const mainScrollBar = scrollbar.init(document.querySelector('#content'), {
+        syncCallbacks: true,
+      });
 
-      if (winWidth > 2559) {
-        closeTop = 95;
-      } else if (winWidth > 1366) {
-        closeTop = 71;
-      } else if (winWidth > 768) {
-        closeTop = 70;
-      } else {
-        closeTop = 72;
-      }
-
-    mainScrollBar.addListener( function(status) { 
+      mainScrollBar.addListener( function(status) { 
+          
         closeMenu.forEach( (e) => {
           e.style.top = status.offset.y + closeTop + 'px';
         });
+
         menuOpen.style.top = status.offset.y + 'px';
-        //menuOpen.style.right = status.offset.x + 'px';
-    });
-
-    const mainCube = document.querySelector('.cube-wrap');
-    const introSection = document.querySelector('#intro');
-
-    if (mainCube) {
-
-      let multiplier = -4;
-
-      mainScrollBar.addListener( function(status) {
-        introSection.style.top = (status.offset.y / multiplier) + 'px';
+        
       });
+
+      if ( mainCube ) {
+
+        multiplier = -4;
+  
+        mainScrollBar.addListener( function(status) {
+          introSection.style.top = (status.offset.y / multiplier) + 'px';
+        });
+  
+      }
+  
+      if ( aboutTopCube ) {
+  
+        multiplier = 5;
+  
+        mainScrollBar.addListener( function(status) {
+          aboutTopCube.style.top = (status.offset.y / multiplier) + 'px';
+          aboutBotCube.style.top = (status.offset.y / (multiplier * 2)) + 'px';
+        });
+  
+      }
+
+    } else {
+
+      if ( mainCube ) {
+
+        multiplier = -4;
+  
+        window.addEventListener( 'scroll',  function() {
+          introSection.style.top = (this.scrollY / multiplier) + 'px';
+        });
+  
+      }
+
+      if ( aboutTopCube ) {
+  
+        multiplier = 5;
+  
+        window.addEventListener( 'scroll', function() {
+          aboutTopCube.style.top = (window.scrollY / multiplier) + 'px';
+          aboutBotCube.style.top = (window.scrollY / (multiplier * 2)) + 'px';
+        });
+  
+      }
 
     }
 
-    const aboutTopCube = document.querySelector('.first_top_cube');
-
-    if ( aboutTopCube ) {
-
-      const aboutBotCube = document.querySelector('.first_bot_cube');
-
-      let multiplier = 5;
-
-      mainScrollBar.addListener( function(status) {
-        aboutTopCube.style.top = (status.offset.y / multiplier) + 'px';
-        aboutBotCube.style.top = (status.offset.y / (multiplier * 2)) + 'px';
-      });
-
-    }
-
-    
+    // sidebar
+    const closeMenu = document.querySelectorAll('.closemenu');
+    const menuOpen = document.querySelector('.menu_open'); 
 
     const body = document.body;
 

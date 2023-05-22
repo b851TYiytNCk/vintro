@@ -4,12 +4,14 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const winWidth = window.innerWidth;
 
+    const notMobile = winWidth > 768;
+
     let abSlNum,
         abSlGr,
         abSlSpace;
 
 
-    if ( winWidth > 768 ) {
+    if ( notMobile ) {
         
         abSlNum = 3.5;
         abSlGr = 4;
@@ -71,28 +73,32 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
 
-    function attachCursorStyle(els, className) {
-        els.forEach( function(el){
-        
-            el.addEventListener('mouseenter', () => {
-                cursor.addState(className); // you can pass multiple states separated by whitespace
-            });
+    if ( notMobile ) {
+
+        function attachCursorStyle(els, className) {
+            els.forEach( function(el){
             
-            el.addEventListener('mouseleave', () => {
-                cursor.removeState(className);
+                el.addEventListener('mouseenter', () => {
+                    cursor.addState(className); // you can pass multiple states separated by whitespace
+                });
+                
+                el.addEventListener('mouseleave', () => {
+                    cursor.removeState(className);
+                });
             });
+        }
+    
+        const cursorInverseElements = document.querySelectorAll('.footer-links li, .burger-lines-wrap, .menu_open-social');
+        const cursorSmallInverseElements = document.querySelectorAll('.members_soc_item');
+    
+        attachCursorStyle(cursorInverseElements, '-inverse-scaled');
+        attachCursorStyle(cursorSmallInverseElements, '-small-inverse-scaled');
+    
+        const cursor = new MouseFollower({
+            container: 'body',
+            speed: 0.55
         });
-    }
 
-    const cursorInverseElements = document.querySelectorAll('.footer-links li, .burger-lines-wrap, .menu_open-social');
-    const cursorSmallInverseElements = document.querySelectorAll('.members_soc_item');
-
-    attachCursorStyle(cursorInverseElements, '-inverse-scaled');
-    attachCursorStyle(cursorSmallInverseElements, '-small-inverse-scaled');
-
-    const cursor = new MouseFollower({
-        container: 'body',
-        speed: 0.55
-    });
+    }   
 
 });

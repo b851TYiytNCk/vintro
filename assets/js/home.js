@@ -3,18 +3,18 @@ document.addEventListener('DOMContentLoaded', function(){
 
     const winWidth = window.innerWidth;
 
+    const notMobile = winWidth > 768;
+
     let recentSwiperNum,
         recentSlidesPerGroup,
         recentSpaceBetween = 60;
-
-    console.log(winWidth);
 
     if ( winWidth > 1024 ) {
 
         recentSwiperNum = 3.5;
         recentSlidesPerGroup = 3;
 
-    } else if ( winWidth > 768 ) {
+    } else if ( notMobile ) {
 
         recentSwiperNum = 2.5;
         recentSlidesPerGroup = 2;
@@ -62,7 +62,8 @@ document.addEventListener('DOMContentLoaded', function(){
         }
         
         hoveredElement = targetElement;
-        if (targetElement.classList.contains('areas-grid-item')) {
+
+        if (targetElement && targetElement.classList.contains('areas-grid-item')) {
             
             //console.log('added');
             hoveredElement.classList.add('black-top-border');
@@ -110,7 +111,11 @@ document.addEventListener('DOMContentLoaded', function(){
         const observer = new MutationObserver(callback);
 
         // Start observing the target node for configured mutations
-        observer.observe(targetNode, config);
+        
+        if ( targetNode ) {
+            observer.observe(targetNode, config);
+        }
+        
     }
 
     
@@ -138,35 +143,39 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
 
-    const cursorInverseElements = document.querySelectorAll( '.footer-links li, .burger-lines-wrap, .menu_open-social' );
+    if ( notMobile ) {
 
-    const cursor = new MouseFollower({
-        container: 'body',
-        speed: 0.55
-    });
+        const cursorInverseElements = document.querySelectorAll( '.footer-links li, .burger-lines-wrap, .menu_open-social' );
 
-    cursorInverseElements.forEach( function(el) {
-        
-        el.addEventListener('mouseenter', () => {
-            cursor.addState('-inverse-scaled'); // you can pass multiple states separated by whitespace
+        const cursor = new MouseFollower({
+            container: 'body',
+            speed: 0.55
         });
-        
-        el.addEventListener('mouseleave', () => {
-            cursor.removeState('-inverse-scaled');
-        });
-    });
 
-    const hidingCursorElems = document.querySelectorAll('.intro__top-right-more-link, .intro__get_in_touch, .more_projects_link');
+        cursorInverseElements.forEach( function(el) {
+            
+            el.addEventListener('mouseenter', () => {
+                cursor.addState('-inverse-scaled'); // you can pass multiple states separated by whitespace
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                cursor.removeState('-inverse-scaled');
+            });
+        });
 
-    hidingCursorElems.forEach( function(el) {
-        el.addEventListener('mouseenter', () => {
-            cursor.hide(); // you can pass multiple states separated by whitespace
+        const hidingCursorElems = document.querySelectorAll('.intro__top-right-more-link, .intro__get_in_touch, .more_projects_link');
+
+        hidingCursorElems.forEach( function(el) {
+            el.addEventListener('mouseenter', () => {
+                cursor.hide(); // you can pass multiple states separated by whitespace
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                cursor.show();
+            });
         });
-        
-        el.addEventListener('mouseleave', () => {
-            cursor.show();
-        });
-    });
+
+    }
 
 
     // .video_container - target
