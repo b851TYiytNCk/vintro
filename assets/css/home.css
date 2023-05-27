@@ -1084,10 +1084,6 @@ img.intro__top-right-arrow-start {
     }
 }
 
-@media only screen and (max-width: 870px) {
-
-}
-
 .mobile-version {
     display: none;
     position: fixed;
@@ -1162,6 +1158,10 @@ img.intro__top-right-arrow-start {
 
     .intro__top-title span {
         font-size: 43px;
+    }
+
+    .main_title br {
+        display: none;
     }
 
     .intro__get_in_touch {
@@ -1297,4 +1297,26 @@ img.intro__top-right-arrow-start {
         margin-top: 10px;
         font-size: 14px;
     }
+}
+
+@media only screen and (max-width: 500px) {
+    
+    .video_container {
+        height: 50vw;
+    }
+
+    .intro__top,
+    .intro__top .intro__get_in_touch {
+        max-width: unset;
+    }
+
+    .cube-wrap {
+        right: 0;
+        transform: translateX(15%);
+    }
+
+    .intro__parallax img {
+        width: 360px;
+    }
+
 }

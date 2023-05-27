@@ -1383,6 +1383,22 @@ body .mf-cursor.medium:before {
 
 }
 
+@media only screen and (max-width: 500px) {
+
+    .menu_open {
+        max-width: unset;
+    }
+
+    .menu_main_list {
+        text-align: center;
+    }
+
+    .menu_open_links {
+        align-items: center;
+    }
+
+}
+
 @media only screen and (max-width: 400px) {
 
     .menu_open {

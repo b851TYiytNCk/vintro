@@ -790,6 +790,8 @@
     .ind_exp_grid {
         grid-template-columns: 1fr 1fr;
         grid-gap: 40px 0;
+        margin-left: -20px;
+        margin-right: -10px;
     }
 
     .ind_exp_grid_item {
