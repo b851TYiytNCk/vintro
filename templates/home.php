@@ -21,77 +21,79 @@
         </div>
    
         <div id="content">
-            <header class="main-hdr" id="main-header">
-                <div class="container">
-                    <div class="main-hdr-logo-wrap">
-                        <a href="/">
-                            <img src="assets/img/logo.svg" alt="" class="logo-header">
-                        </a>
-                    </div>
-                    <div class="burger-lines-wrap">
-                        <div class="burger-lines">
-                            <div class="burger-line"></div>
-                            <div class="burger-line"></div>
-                        </div>
-                        <div class="closemenu">
-                            <div class="burger-line"></div>
-                            <div class="burger-line"></div>
-                        </div>
-                        <!-- <svg class="closemenu" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19.9712 1.30658L18.6935 0.028717L9.99991 8.7223L1.30588 0.028717L0.0283203 1.30658L8.72234 10.0002L0.0283203 18.6938L1.30588 19.9716L9.99991 11.278L18.6935 19.9716L19.9712 18.6938L11.2776 10.0002L19.9712 1.30658Z" fill="#040505"/>
-                        </svg> -->
-                    </div>
-                </div>
-            </header>
-            <section id="first">
-                <?php include('menu_open.php'); ?>
-                
-
-                <div class="bg-fixed-first"></div>
-                <div class="container cube-wrap">
-                    <div id="intro-container">
-                        <div class="intro__parallax" data-depth="0.4">
-                            <img src="/assets/img/cube-comp.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <section id="intro">
+            <div class="first-wrap" id="first-wrap">
+                <header class="main-hdr" id="main-header">
                     <div class="container">
-                        <div class="intro__top">  
-                            <div class="intro__top-left">
-                                <div class="side_title">
-                                    <div class="side_title_line"></div>
-                                    <div class="side_title_text">We're a team driven by</div>
+                        <div class="main-hdr-logo-wrap">
+                            <a href="/">
+                                <img src="assets/img/logo.svg" alt="" class="logo-header">
+                            </a>
+                        </div>
+                        <div class="burger-lines-wrap">
+                            <div class="burger-lines">
+                                <div class="burger-line"></div>
+                                <div class="burger-line"></div>
+                            </div>
+                            <div class="closemenu">
+                                <div class="burger-line"></div>
+                                <div class="burger-line"></div>
+                            </div>
+                            <!-- <svg class="closemenu" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.9712 1.30658L18.6935 0.028717L9.99991 8.7223L1.30588 0.028717L0.0283203 1.30658L8.72234 10.0002L0.0283203 18.6938L1.30588 19.9716L9.99991 11.278L18.6935 19.9716L19.9712 18.6938L11.2776 10.0002L19.9712 1.30658Z" fill="#040505"/>
+                            </svg> -->
+                        </div>
+                    </div>
+                </header>
+                <section id="first">
+                    <?php include('menu_open.php'); ?>
+                    
+
+                    <div class="bg-fixed-first"></div>
+                    <div class="container cube-wrap">
+                        <div id="intro-container">
+                            <div class="intro__parallax" data-depth="0.4">
+                                <img src="/assets/img/cube-comp.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <section id="intro">
+                        <div class="container">
+                            <div class="intro__top">  
+                                <div class="intro__top-left">
+                                    <div class="side_title">
+                                        <div class="side_title_line"></div>
+                                        <div class="side_title_text">We're a team driven by</div>
+                                    </div>
+                                    <h1 class="main_title intro__top-title">
+                                        <span>Creative</span>
+                                        <span>Innovation</span>
+                                        <span>Technology</span>
+                                    </h1>
+                                    <div class="get-in-touch-wrap">
+                                        <a href="/contact" class="intro__get_in_touch">
+                                            <p class="intro__get_in_touch-text">Get in touch</p>
+                                            <div class="intro__get_in_touch_arrow">
+                                                <img class="intro__arrow-start" src="/assets/img/arrow-start.svg" alt="">
+                                                <img class="intro__arrow-right" src="/assets/img/arrow-right.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
-                                <h1 class="main_title intro__top-title">
-                                    <span>Creative</span>
-                                    <span>Innovation</span>
-                                    <span>Technology</span>
-                                </h1>
-                                <div class="get-in-touch-wrap">
-                                    <a href="/contact" class="intro__get_in_touch">
-                                        <p class="intro__get_in_touch-text">Get in touch</p>
-                                        <div class="intro__get_in_touch_arrow">
-                                            <img class="intro__arrow-start" src="/assets/img/arrow-start.svg" alt="">
+                                <div class="intro__top-right">
+                                    <h2 class="intro__top-right-info">Vintro is a full service digital agency focused on startups.</h2>
+                                    <a href="/about-us" class="intro__top-right-more-link">
+                                        <p class="intro__top-right-more-text">More about us</p>
+                                        <div class="intro__top-right-arrow">
+                                            <img class="intro__top-right-arrow-start" src="/assets/img/arrow-start.svg" alt="">
                                             <img class="intro__arrow-right" src="/assets/img/arrow-right.svg" alt="">
                                         </div>
                                     </a>
                                 </div>
                             </div>
-                            <div class="intro__top-right">
-                                <h2 class="intro__top-right-info">Vintro is a full service digital agency focused on startups.</h2>
-                                <a href="/about-us" class="intro__top-right-more-link">
-                                    <p class="intro__top-right-more-text">More about us</p>
-                                    <div class="intro__top-right-arrow">
-                                        <img class="intro__top-right-arrow-start" src="/assets/img/arrow-start.svg" alt="">
-                                        <img class="intro__arrow-right" src="/assets/img/arrow-right.svg" alt="">
-                                    </div>
-                                </a>
-                            </div>
                         </div>
-                    </div>
+                    </section>
                 </section>
-            </section>
+            </div>
             <section id="areas">
                 <div class="container">
                     <div class="side_title">

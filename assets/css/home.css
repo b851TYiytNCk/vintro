@@ -1,7 +1,9 @@
+.first-wrap {
+    height: 900px;
+}
+
 #first {
     overflow: visible;
-    min-height: 100vh;
-    height: 100vh;
     position: relative;
 }
 
@@ -583,7 +585,7 @@ img.intro__top-right-arrow-start {
 
 @supports (-webkit-touch-callout: none) {
     /* CSS specific to iOS devices */
-    #first {
+    .first-wrap {
         min-height: -webkit-fill-available;
     }
 }
@@ -616,8 +618,9 @@ img.intro__top-right-arrow-start {
         width: 793px;
     }
     
-    #first {
-        min-height: 1080px;
+    .first-wrap {
+        height: 1080px;
+        min-height: unset;
     }
 
     .intro__get_in_touch, .more_projects_link {
@@ -768,11 +771,7 @@ img.intro__top-right-arrow-start {
 }
 
 @media only screen and (min-width: 2100px) {
-    #first {
-        min-height: unset;
-        height: 1080px;
-    }
-
+    
     .intro__top-title span {
         font-size: 102px;
     }
@@ -780,6 +779,7 @@ img.intro__top-right-arrow-start {
     .bg-fixed-first {
         width: 900px;
     }
+    
 }
 
 @media only screen and (min-width: 2560px) {
@@ -788,7 +788,7 @@ img.intro__top-right-arrow-start {
         margin-top: 260px;
     }
 
-    #first {
+    .first-wrap {
         height: 1600px;
     }
 
@@ -931,6 +931,10 @@ img.intro__top-right-arrow-start {
 
     .bg-fixed-first {
         width: 550px;
+    }
+
+    .first-wrap {
+        height: 600px;
     }
 
     .intro__top-title {
@@ -1138,7 +1142,7 @@ img.intro__top-right-arrow-start {
         --cont-max-width: calc(100% - 50px);
     }
 
-    #first {
+    .first-wrap {
         height: 865px;
         overflow: hidden;
     }
@@ -1213,7 +1217,7 @@ img.intro__top-right-arrow-start {
         right: 50%;
         transform: translateX(85%);
         top: unset;
-        bottom: -20px;
+        bottom: -250px;
         width: 22.5rem;
     }
 
