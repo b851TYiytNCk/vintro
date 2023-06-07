@@ -764,11 +764,6 @@
     .first_top_inner {
         position: relative;
     }
-
-    .first_heading {
-        position: relative;
-        z-index: 1;
-    }
     
     .first_cubes {
         position: absolute;
@@ -896,6 +891,14 @@
 
     .intro__get_in_touch:hover .intro__get_in_touch-text {
         color: #fff;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+
+    :root {
+        --cont-max-width: clamp(325px, calc(100% - 50px), 390px);
     }
 
 }

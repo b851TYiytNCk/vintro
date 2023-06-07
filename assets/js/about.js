@@ -64,8 +64,8 @@ document.addEventListener('DOMContentLoaded', function(){
             },
             reachEnd: function() {
 
-                if ( winWidth < 769  && winWidth < 450 ) {
-                    
+                if ( winWidth < 769  && winWidth > 450 ) {
+
                     this.el.classList.add('reach_end');
 
                 }
