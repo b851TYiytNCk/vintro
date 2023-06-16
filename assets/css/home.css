@@ -375,7 +375,6 @@ img.intro__top-right-arrow-start {
 }
 
 .recent-swiper .swiper-slide {
-    opacity: 0.3;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -384,6 +383,19 @@ img.intro__top-right-arrow-start {
 .recent-slide-img {
     overflow: hidden;
     margin-bottom: 35px;
+}
+
+.recent-slide-img.text-slide {
+    padding: 35px 30px;
+}
+
+.recent-slide-img h4 {
+    color: var(--black);
+    font-family: 'Сy Grotesk', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 100%;
 }
 
 .recent-slide-img img {

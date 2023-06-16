@@ -8,7 +8,7 @@ const concat = require("gulp-concat");
 const pxToRem = require('gulp-px2rem-converter');
 const sourcemaps = require('gulp-sourcemaps');
 
-const fileName = 'about';
+const fileName = 'home';
 
 let swiperCssPath = 'assets/css/min/swiper-bundle.min.css',
 	swiperJsPath = 'assets/js/min/swiper-bundle.min.js',

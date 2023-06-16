@@ -223,14 +223,17 @@
                 <div class="container">
                     <div class="side_title">
                         <div class="side_title_line"></div>
-                        <div class="side_title_text">Top case</div>
+                        <div class="side_title_text">Last case</div>
                     </div>
                     <h2 class="main_title">Doing work in a way that<br> you can be proud of.</h2>
                     <div class="video_container_wrap">
                         <div class="video_container">
                             <div class="video_inner"> <!--data-cursor="behance-case"-->
                                 <a href="https://www.behance.net/vintroagency">
-                                    <video loop muted playsinline src="assets/img/home/showreel-temp.mov" poster="assets/img/home/snapshot.png"></video>
+                                    <video loop muted playsinline>
+                                        <source src="assets/img/home/case.webm">
+                                        <source src="assets/img/home/case.mov">
+                                    </video>
                                 </a>
                                 <a class="video_link" href="https://www.behance.net/vintroagency">
                                     <div class="spinner spinner-3"></div>
@@ -248,7 +251,7 @@
                 <div class="container">
                     <div class="side_title">
                         <div class="side_title_line"></div>
-                        <div class="side_title_text">Publishing schedule</div>
+                        <div class="side_title_text">Publications</div>
                     </div>
                     <h2 class="main_title recent_title">Being public and talking about<br> everything we have going on.</h2>
                     <!-- Slider main container -->
@@ -258,39 +261,39 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <div class="swiper-slide">
+                                <a href="" class="swiper-slide" target="_blank">
                                     <div class="recent-slide-img"> <!-- data-cursor="behance" -->
-                                        <img src="/assets/img/home/publish/1-publication.png" alt="">
+                                        <img src="/assets/img/home/publish/otto-dribble.png" alt="">
                                     </div>
-                                    <p class="recent-date">On schedule</p>
-                                    <h4 class="recent-label">Vintro introduction. Startup<br> agency for startup companies</h4>
+                                    <p class="recent-date">June 13, 2023</p>
+                                    <h4 class="recent-label">Otto — Dribbble shot 1/3</h4>
+                                    <div class="recent-tag">#DesignShot</div>
+                                </a>
+                                <a href="https://www.behance.net/gallery/172447957/Otto-Project-management-app-powered-by-AI" class="swiper-slide" target="_blank">
+                                    <div class="recent-slide-img">
+                                        <img src="/assets/img/home/publish/otto-project-management.png" alt="">
+                                    </div>
+                                    <p class="recent-date">June 6, 2023</p>
+                                    <h4 class="recent-label">Otto — Project management app powered by AI</h4>
+                                    <div class="recent-tag">#DesignCase</div>
+                                </a>
+                                <a href="" class="swiper-slide" target="_blank">
+                                    <div class="recent-slide-img text-slide">
+                                        <h4>Hello!<br> We’re<br> Vintro</h4>
+                                    </div>
+                                    <p class="recent-date">June 1, 2023</p>
+                                    <h4 class="recent-label">Introducing Vintro — Twitter</h4>
                                     <div class="recent-tag">#Vision</div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="recent-slide-img">
-                                        <img src="/assets/img/home/publish/2-publication.png" alt="">
+                                </a>
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7070172168977829888" class="swiper-slide" target="_blank">
+                                    <div class="recent-slide-img text-slide">
+                                        <h4>Hello!<br> We’re<br> Vintro</h4>
                                     </div>
-                                    <p class="recent-date">On schedule</p>
-                                    <h4 class="recent-label">Crypto wallet mobile<br> app interface design</h4>
-                                    <div class="recent-tag">#Case</div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="recent-slide-img">
-                                        <img src="/assets/img/home/publish/3-publication.png" alt="">
-                                    </div>
-                                    <p class="recent-date">On schedule</p>
-                                    <h4 class="recent-label">Our innovative<br> decentralized HR policy</h4>
-                                    <div class="recent-tag">#Process</div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="recent-slide-img">
-                                        <img src="/assets/img/home/publish/4-publication.png" alt="">
-                                    </div>
-                                    <p class="recent-date">On schedule</p>
-                                    <h4 class="recent-label">Why transparency is the<br> key to better collaboration?</h4>
-                                    <div class="recent-tag">#Value</div>
-                                </div>
-                                <div class="swiper-slide">
+                                    <p class="recent-date">June 1, 2023</p>
+                                    <h4 class="recent-label">Introducing Vintro — LinkedIn</h4>
+                                    <div class="recent-tag">#Vision</div>
+                                </a>
+                                <!-- <div class="swiper-slide">
                                     <div class="recent-slide-img">
                                         <img src="/assets/img/home/publish/5-publication.png" alt="">
                                     </div>
@@ -305,7 +308,7 @@
                                     <p class="recent-date">On schedule</p>
                                     <h4 class="recent-label">New brand identity design<br> for crypto project</h4>
                                     <div class="recent-tag">#Case</div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <div class="recent_slider_line"></div>
