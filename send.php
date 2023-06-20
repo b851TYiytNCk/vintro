@@ -19,11 +19,7 @@ $name = $data['name'];
 $email = $data['email'];
 $text = $data['text'];
 
-$mailValid = !empty( $mail );
-$nameValid = !empty( $name );
-$textValid = !empty( $text );
-
-if ( $mailValid && $nameValid && $textValid ) {
+if ($mail && $name && $email && $text) {
     
     $name = htmlspecialchars($name);
     $email = htmlspecialchars($email);
@@ -33,19 +29,19 @@ if ( $mailValid && $nameValid && $textValid ) {
         //Server settings
         //$mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
         $mail->isSMTP();                                            //Send using SMTP
-        $mail->Host       = 'private information';                     //Set the SMTP server to send through
-        $mail->SMTPAuth   = 'private information';                                   //Enable SMTP authentication
-        $mail->Username   = 'private information';                     //SMTP username
-        $mail->Password   = 'private information';                               //SMTP password
-        $mail->SMTPSecure = 'private information';            //Enable implicit TLS encryption
-        $mail->Port       = 'private information';                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
-        $mail->CharSet = 'private information';
+        $mail->Host       = 'vintro.agency';                     //Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
+        $mail->Username   = 'hello@vintro.agency';                     //SMTP username
+        $mail->Password   = '+yP2OEicdU?5';                               //SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+        $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+        $mail->CharSet = 'utf-8';
         //Recipients
-        $mail->setFrom('private information', 'private information');
-        $mail->addAddress('private information');               //Name is optional
-        $mail->addReplyTo('private information');
-        $mail->addCC('private information');
-        $mail->addBCC('private information');
+        $mail->setFrom('hello@vintro.agency', 'Vintro Agency');
+        $mail->addAddress('hello@vintro.agency');               //Name is optional
+        $mail->addReplyTo('hello@vintro.agency');
+        $mail->addCC('hello@vintro.agency');
+        $mail->addBCC('hello@vintro.agency');
 
         //Attachments
         // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
@@ -76,21 +72,25 @@ if ( $mailValid && $nameValid && $textValid ) {
 
 } else {
 
-    $error_arr = array(
-        'error' => true
-    );
-
-    if (!$mailValid) {
-        $error_arr['email'] = 'invalid';
-    } 
-
-    if (!$nameValid) {
-        $error_arr['name'] = 'invalid';
-    } 
-     
-    if (!$textValid) {
-        $error_arr['text'] = 'invalid';
+    if (!$email && !$name && !$text) {
+        echo json_encode(array(
+            "error" => "all"
+        ));
+    } elseif (!$email && !$name) {
+        echo json_encode(array(
+            "error" => "name_email"
+        ));
+    } elseif (!$text && !$name) {
+        echo json_encode(array(
+            "error" => "name_text"
+        ));
+    } elseif (!$text && !$email) {
+        echo json_encode(array(
+            "error" => "email_text"
+        ));
     }
 
-    echo json_encode( $error_arr );
+    print_r(json_encode(array(
+        "msg" => $data
+    )));
 }

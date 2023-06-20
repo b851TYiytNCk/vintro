@@ -229,16 +229,16 @@
                     <div class="video_container_wrap">
                         <div class="video_container">
                             <div class="video_inner"> <!--data-cursor="behance-case"-->
-                                <a href="https://www.behance.net/vintroagency">
+                                <a data-cursor="behance" href="https://www.behance.net/gallery/172447957/Otto-Project-management-app-powered-by-AI">
                                     <video loop muted playsinline>
-                                        <source src="assets/img/home/case.webm">
-                                        <source src="assets/img/home/case.mov">
+                                        <source src="/assets/img/home/case.webm" type="video/webm">
+                                        <source src="/assets/img/home/case.mov" type="video/quicktime">
                                     </video>
                                 </a>
-                                <a class="video_link" href="https://www.behance.net/vintroagency">
+                                <a data-cursor="behance" class="video_link" href="https://www.behance.net/gallery/172447957/Otto-Project-management-app-powered-by-AI">
                                     <div class="spinner spinner-3"></div>
                                     <div class="video_icon">
-                                        <img src="assets/img/home/behance.svg" alt="">
+                                        <img src="assets/img/socials/behance.svg" alt="">
                                     </div>
                                 </a>
                             </div>
@@ -261,15 +261,17 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
-                                <a href="" class="swiper-slide" target="_blank">
-                                    <div class="recent-slide-img"> <!-- data-cursor="behance" -->
-                                        <img src="/assets/img/home/publish/otto-dribble.png" alt="">
+                                <a href="https://dribbble.com/shots/21730036-Otto-Project-management-app"
+                                 class="swiper-slide" target="_blank" data-cursor="dribbble">
+                                    <div class="recent-slide-img">
+                                        <img src="/assets/img/home/publish/otto-dribbble.png" alt="">
                                     </div>
                                     <p class="recent-date">June 13, 2023</p>
                                     <h4 class="recent-label">Otto — Dribbble shot 1/3</h4>
                                     <div class="recent-tag">#DesignShot</div>
                                 </a>
-                                <a href="https://www.behance.net/gallery/172447957/Otto-Project-management-app-powered-by-AI" class="swiper-slide" target="_blank">
+                                <a href="https://www.behance.net/gallery/172447957/Otto-Project-management-app-powered-by-AI"
+                                class="swiper-slide" target="_blank" data-cursor="behance">
                                     <div class="recent-slide-img">
                                         <img src="/assets/img/home/publish/otto-project-management.png" alt="">
                                     </div>
@@ -277,17 +279,19 @@
                                     <h4 class="recent-label">Otto — Project management app powered by AI</h4>
                                     <div class="recent-tag">#DesignCase</div>
                                 </a>
-                                <a href="" class="swiper-slide" target="_blank">
-                                    <div class="recent-slide-img text-slide">
-                                        <h4>Hello!<br> We’re<br> Vintro</h4>
+                                <a href="https://twitter.com/vintroagency/status/1664407220216381441?s=20"
+                                class="swiper-slide" target="_blank" data-cursor="twitter">
+                                    <div class="recent-slide-img">
+                                        <img src="/assets/img/home/publish/vintro-publication.png" alt="">
                                     </div>
                                     <p class="recent-date">June 1, 2023</p>
                                     <h4 class="recent-label">Introducing Vintro — Twitter</h4>
                                     <div class="recent-tag">#Vision</div>
                                 </a>
-                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7070172168977829888" class="swiper-slide" target="_blank">
-                                    <div class="recent-slide-img text-slide">
-                                        <h4>Hello!<br> We’re<br> Vintro</h4>
+                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7070172168977829888"
+                                class="swiper-slide" target="_blank" data-cursor="linkedin">
+                                    <div class="recent-slide-img">
+                                        <img src="/assets/img/home/publish/vintro-publication.png" alt="">
                                     </div>
                                     <p class="recent-date">June 1, 2023</p>
                                     <h4 class="recent-label">Introducing Vintro — LinkedIn</h4>

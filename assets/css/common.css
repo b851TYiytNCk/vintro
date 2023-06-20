@@ -557,10 +557,11 @@ body .mf-cursor.-small-inverse-scaled:before {
 body .mf-cursor.behance:before,
 body .mf-cursor.dribbble:before,
 body .mf-cursor.medium:before,
-body .mf-cursor.behance-case:before {
+body .mf-cursor.twitter:before,
+body .mf-cursor.linkedin:before {
     transform: scale(1.32);
     background-color: #f9f7f9;
-    background-image: url('/assets/img/home/behance.svg');
+    background-image: url('/assets/img/socials/behance.svg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 50%;
@@ -580,6 +581,14 @@ body .mf-cursor.dribbble:before {
 
 body .mf-cursor.medium:before {
     background-image: url('/assets/img/socials/medium.svg');
+}
+
+body .mf-cursor.linkedin:before {
+    background-image: url('/assets/img/socials/linkedin.svg');
+}
+
+body .mf-cursor.twitter:before {
+    background-image: url('/assets/img/socials/twitter.svg');
 }
 
 @supports (-webkit-touch-callout: none) {
@@ -1253,6 +1262,10 @@ body .mf-cursor.medium:before {
         display: none;
     }
 
+    .main-hdr {
+        padding-top: 35px;
+    }
+
     .main-hdr-logo-wrap a, .main-hdr-logo-wrap img {
         width: 138px;
     }
@@ -1282,7 +1295,7 @@ body .mf-cursor.medium:before {
     }
 
     .side_title_line {
-        width: 40px;
+        width: 28px;
     }
 
     .side_title {

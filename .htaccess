@@ -1,0 +1,11 @@
+
+RewriteOptions inherit
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+RewriteCond %{HTTP_HOST} ^www\.vintro\.agency$
+RewriteRule ^main$ "https\:\/\/vintro\.agency\/" [R=301,L]
+RewriteCond %{HTTP_HOST} ^vintro\.agency$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vintro\.agency$
+RewriteRule ^main\.php$ "https\:\/\/vintro\.agency\/" [R=301,L]

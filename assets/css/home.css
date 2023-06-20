@@ -358,7 +358,7 @@ img.intro__top-right-arrow-start {
     width: 100vw;
     height: 1px;
     max-width: unset;
-    margin-left: calc( (100vw - var(--cont-max-width)) / -2);
+    margin-left: calc( (100vw - 100%) / -2);
     background-color: var(--gray-tle-border);
     transition: background .3s ease;
 }
