@@ -229,13 +229,12 @@
                     <div class="video_container_wrap">
                         <div class="video_container">
                             <div class="video_inner"> <!--data-cursor="behance-case"-->
-                                <a data-cursor="behance" href="https://www.behance.net/gallery/172447957/Otto-Project-management-app-powered-by-AI">
-                                    <video loop muted playsinline>
-                                        <source src="/assets/img/home/case.webm" type="video/webm">
-                                        <source src="/assets/img/home/case.mov" type="video/quicktime">
+                                <a data-cursor="logo behance" href="https://www.behance.net/gallery/172447957/Otto-Project-management-app-powered-by-AI">
+                                    <video loop muted playsinline>                                        
+                                        <source src="/assets/img/home/case.mp4" type="video/mp4">
                                     </video>
                                 </a>
-                                <a data-cursor="behance" class="video_link" href="https://www.behance.net/gallery/172447957/Otto-Project-management-app-powered-by-AI">
+                                <a data-cursor="logo behance" class="video_link" href="https://www.behance.net/gallery/172447957/Otto-Project-management-app-powered-by-AI">
                                     <div class="spinner spinner-3"></div>
                                     <div class="video_icon">
                                         <img src="assets/img/socials/behance.svg" alt="">
@@ -261,8 +260,53 @@
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
+                                <a href="https://dribbble.com/shots/22118094-Website-Creasquare-B-W"
+                                 class="swiper-slide" target="_blank" data-cursor="logo dribbble">
+                                    <div class="recent-slide-img">
+                                        <img src="/assets/img/home/publish/creasquare.png" alt="">
+                                    </div>
+                                    <p class="recent-date">Jul 27, 2023</p>
+                                    <h4 class="recent-label">Creasquare — Website concept (B/W theme)</h4>
+                                    <div class="recent-tag">#DesignShot</div>
+                                </a>
+                                <a href="https://dribbble.com/shots/22054390-Website-Reply-Muse"
+                                 class="swiper-slide" target="_blank" data-cursor="logo dribbble">
+                                    <div class="recent-slide-img">
+                                        <img src="/assets/img/home/publish/reply-muse.png" alt="">
+                                    </div>
+                                    <p class="recent-date">Jul 20, 2023</p>
+                                    <h4 class="recent-label">Reply Muse — Website concept</h4>
+                                    <div class="recent-tag">#DesignShot</div>
+                                </a>
+                                <a href="https://www.instagram.com/p/CuCo95ltYPa/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA%3D%3D"
+                                 class="swiper-slide" target="_blank" data-cursor="logo instagram">
+                                    <div class="recent-slide-img">
+                                        <img src="/assets/img/home/publish/des-series.png" alt="">
+                                    </div>
+                                    <p class="recent-date">June 28, 2023</p>
+                                    <h4 class="recent-label">Otto — Dribbble series on Instagram</h4>
+                                    <div class="recent-tag">#DesignShot</div>
+                                </a>
+                                <a href="https://dribbble.com/shots/21865079-Otto-Project-management-app"
+                                 class="swiper-slide" target="_blank" data-cursor="logo dribbble">
+                                    <div class="recent-slide-img">
+                                        <img src="/assets/img/home/publish/des-series.png" alt="">
+                                    </div>
+                                    <p class="recent-date">June 28, 2023</p>
+                                    <h4 class="recent-label">Otto — Dribbble series 3/3</h4>
+                                    <div class="recent-tag">#DesignShot</div>
+                                </a>
+                                <a href="https://dribbble.com/shots/21811102-Otto-Project-management-app"
+                                 class="swiper-slide" target="_blank" data-cursor="logo dribbble">
+                                    <div class="recent-slide-img">
+                                        <img src="/assets/img/home/publish/dribshot-2-3.png" alt="">
+                                    </div>
+                                    <p class="recent-date">June 22, 2023</p>
+                                    <h4 class="recent-label">Otto — Dribbble shot 2/3</h4>
+                                    <div class="recent-tag">#DesignShot</div>
+                                </a>
                                 <a href="https://dribbble.com/shots/21730036-Otto-Project-management-app"
-                                 class="swiper-slide" target="_blank" data-cursor="dribbble">
+                                 class="swiper-slide" target="_blank" data-cursor="logo dribbble">
                                     <div class="recent-slide-img">
                                         <img src="/assets/img/home/publish/otto-dribbble.png" alt="">
                                     </div>
@@ -271,7 +315,7 @@
                                     <div class="recent-tag">#DesignShot</div>
                                 </a>
                                 <a href="https://www.behance.net/gallery/172447957/Otto-Project-management-app-powered-by-AI"
-                                class="swiper-slide" target="_blank" data-cursor="behance">
+                                class="swiper-slide" target="_blank" data-cursor="logo behance">
                                     <div class="recent-slide-img">
                                         <img src="/assets/img/home/publish/otto-project-management.png" alt="">
                                     </div>
@@ -280,7 +324,7 @@
                                     <div class="recent-tag">#DesignCase</div>
                                 </a>
                                 <a href="https://twitter.com/vintroagency/status/1664407220216381441?s=20"
-                                class="swiper-slide" target="_blank" data-cursor="twitter">
+                                class="swiper-slide" target="_blank" data-cursor="logo twitter">
                                     <div class="recent-slide-img">
                                         <img src="/assets/img/home/publish/vintro-publication.png" alt="">
                                     </div>
@@ -289,7 +333,7 @@
                                     <div class="recent-tag">#Vision</div>
                                 </a>
                                 <a href="https://www.linkedin.com/feed/update/urn:li:activity:7070172168977829888"
-                                class="swiper-slide" target="_blank" data-cursor="linkedin">
+                                class="swiper-slide" target="_blank" data-cursor="logo linkedin">
                                     <div class="recent-slide-img">
                                         <img src="/assets/img/home/publish/vintro-publication.png" alt="">
                                     </div>

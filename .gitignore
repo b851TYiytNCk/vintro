@@ -10,4 +10,5 @@ ssl
 .directory
 error_log
 *.mov
+*.mp4
 .well-known

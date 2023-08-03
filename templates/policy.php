@@ -173,12 +173,12 @@
                                 </div>
                                 <nav class="footer-links">
                                     <ul>
-                                        <li><a data-text="Twitter" href="https://twitter.com/vintroagency">Twitter</a></li>
-                                        <li><a data-text="LinkedIn" href="https://www.linkedin.com/company/vintroagency">LinkedIn</a></li>
-                                        <li><a data-text="Medium" href="https://medium.com/@vintroagency">Medium</a></li>
-                                        <li><a data-text="Behance" href="https://www.behance.net/vintroagency">Behance</a></li>
-                                        <li><a data-text="Dribbble" href="#">Dribbble</a></li>
-                                        <li><a data-text="Instagram" href="https://www.instagram.com/vintroagency/">Instagram</a></li>
+                                        <li><a target="_blank" data-text="Twitter" href="https://twitter.com/vintroagency">Twitter</a></li>
+                                        <li><a target="_blank" data-text="LinkedIn" href="https://www.linkedin.com/company/vintroagency">LinkedIn</a></li>
+                                        <li><a target="_blank" data-text="Medium" href="https://medium.com/@vintroagency">Medium</a></li>
+                                        <li><a target="_blank" data-text="Behance" href="https://www.behance.net/vintroagency">Behance</a></li>
+                                        <li><a target="_blank" data-text="Dribbble" href="https://dribbble.com/vintroagency">Dribbble</a></li>
+                                        <li><a target="_blank" data-text="Instagram" href="https://www.instagram.com/vintroagency/">Instagram</a></li>
                                     </ul>
                                 </nav>
                                 <div class="menu_open-socials footer-mob-socials">
@@ -202,7 +202,7 @@
                                             <path d="M11.7812 8.33594C13.3555 7.52344 14.2188 6.35547 14.2188 4.57812C14.2188 0.972656 11.5273 0.109375 8.48047 0.109375H0V18.0859H8.68359C11.9844 18.0859 15.0312 16.5117 15.0312 12.8555C15.0312 10.6211 13.9648 8.94531 11.7812 8.33594ZM3.91016 3.15625H7.66797C9.08984 3.15625 10.3594 3.5625 10.3594 5.23828C10.3594 6.76172 9.34375 7.37109 7.92188 7.37109H3.91016V3.15625ZM8.17578 15.0391H3.91016V10.0625H8.22656C10.0039 10.0625 11.0703 10.8242 11.0703 12.6523C11.0703 14.4805 9.75 15.0391 8.17578 15.0391ZM26.3555 2.80078V1.02344H19.0938V2.80078H26.3555ZM29.25 11.7891C29.25 7.92969 26.9648 4.67969 22.9023 4.67969C18.8906 4.67969 16.1992 7.67578 16.1992 11.5859C16.1992 15.6484 18.7891 18.4414 22.9023 18.4414C26 18.4414 28.0312 17.0195 28.9961 14.0742H25.8477C25.4922 15.1914 24.0703 15.75 23.0039 15.75C20.9219 15.75 19.8047 14.5312 19.8047 12.4492H29.1992C29.1992 12.2461 29.25 11.9922 29.25 11.7891ZM19.8047 10.1641C19.9062 8.48828 21.0742 7.42188 22.75 7.42188C24.5781 7.42188 25.4922 8.4375 25.6445 10.1641H19.8047Z" fill="#040505"/>
                                         </svg>
                                     </a>
-                                    <a target="_blank" href="#" class="menu_open-social">
+                                    <a target="_blank" href="https://dribbble.com/vintroagency" class="menu_open-social">
                                         <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M13 0.65625C6.04297 0.65625 0.40625 6.34375 0.40625 13.25C0.40625 20.207 6.04297 25.8438 13 25.8438C19.9062 25.8438 25.5938 20.207 25.5938 13.25C25.5938 6.34375 19.9062 0.65625 13 0.65625ZM21.2773 6.49609C22.8008 8.32422 23.7148 10.6602 23.7148 13.1992C23.3594 13.0977 19.8047 12.3867 16.25 12.8438C15.9453 12.1328 15.6914 11.5234 15.2852 10.7109C19.2969 9.08594 21.0742 6.80078 21.2773 6.49609ZM20.1094 5.22656C19.9062 5.53125 18.2812 7.71484 14.4727 9.13672C12.6953 5.88672 10.7656 3.24609 10.4609 2.83984C13.8633 2.02734 17.4688 2.89062 20.1094 5.22656ZM8.37891 3.55078C8.68359 3.95703 10.6133 6.59766 12.3906 9.79688C7.36328 11.1172 2.94531 11.1172 2.4375 11.0664C3.14844 7.76562 5.38281 4.97266 8.37891 3.55078ZM2.23438 13.3008C2.23438 13.1992 2.23438 13.0977 2.23438 12.9453C2.69141 12.9961 7.92188 13.0469 13.2539 11.4219C13.6094 12.0312 13.8633 12.6406 14.168 13.25C10.2578 14.3672 6.70312 17.5156 4.97656 20.4609C3.25 18.582 2.23438 16.043 2.23438 13.3008ZM6.34766 21.7812C7.51562 19.4961 10.5625 16.5 14.8789 15.0273C16.4023 18.9375 17.0117 22.2383 17.1641 23.2031C13.7109 24.6758 9.54688 24.2695 6.34766 21.7812ZM18.9922 22.1875C18.8906 21.5781 18.2812 18.4297 16.9102 14.5195C20.2617 14.0117 23.207 14.875 23.6133 14.9766C23.1055 17.9727 21.3789 20.5625 18.9922 22.1875Z" fill="#040505"/>
                                         </svg>

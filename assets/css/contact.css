@@ -738,7 +738,7 @@ img.contact-arrow-start {
 @media only screen and (max-width: 768px) {
     
     :root {
-        --cont-max-width: 325px;
+        --cont-max-width: calc(100% - 3.125rem);
     }
 
     .dot,
